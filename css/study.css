@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kosugi', sans-serif;
+}
+
+header{
+    background-color: white;
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    z-index: 90;
+    /* position: relative; */
+}
+
+#logo img{
+    width: 120px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 85px;
+}
+
+#menu{
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    margin-right: 85px;
+    position: relative;
+}
+
+#menu img{
+    width: 100%;
+    height: 100%;
+}
+
+.menu_nav{
+    width: 200px;
+    height: 180px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgb(178, 178, 178);
+    text-align: center;
+    font-size: 16px;
+    background-color: white;
+    position: absolute;
+    top: 50px;
+    right: -85px;
+    margin: auto;
+    display: none;
+}
+
+.menu_nav p{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+}
+
+.menu_nav p a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #5d5d5d;
+    border-radius: 10px;
+}
+
+.menu_nav p a:hover{
+    background-color: blanchedalmond;
+}
+
+.menu_nav_a{
+    display: flex;
+}
+
+
+main{
+    padding-top: 10vh;
+    background-color: white;
+    width: 100vw;
+    height: auto;
+}
+
+.login{
+    width: 450px;
+    height: 500px;
+    z-index: 100;
+    background-color:  white;
+    color: #5d5d5d;
+    border-radius: 20px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    box-shadow: 0px 2px 4px rgb(178, 178, 178);
+    display: none;
+}
+
+.cancel{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.ID{
+    width: 80%;
+    height: 100%;
+    margin: 20px auto;
+}
+
+.login h1{
+    font-size: 20px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.login p{
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.login input{
+    width: 350px;
+    height: 30px;
+    border: solid 1px #5d5d5d;
+    margin-bottom: 30px;
+}
+
+.login h2{
+    font-size: 16px;
+}
+
+.login h3{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.login h3 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color:  #E66C48;
+    text-decoration: none;
+    color: white;
+}
+
+.login h3 a:hover{
+    opacity: 0.8;
+}
+
+
+.main_width{
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.preference{
+    width: 100%;
+    height: 120px;
+    /* background-color: wheat; */
+    border-bottom: 1px solid #C3C3C3;
+}
+
+.preference h2{
+    text-align: left;
+    color: #E33C0B;
+    font-size: 35px;
+    padding-top: 10px;
+}
+
+.preference ul{
+    display: flex;
+    list-style: none;
+    margin-top: 28px;
+}
+
+.preference li{
+    width: 110px;
+    height: 30px;
+    text-align: center;
+    /* border-bottom: solid 2px orange; */
+}
+
+.preference_line{
+    border-bottom: solid 3px #E33C0B;
+    color: #E33C0B;
+}
+
+.preference a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 5px 5px 0 0;
+    text-decoration: none;
+    color: #000000;
+}
+
+.preference a:visited .preference a:link{
+    color: #000000;
+}
+
+.preference a:hover{
+    background-color: rgb(255, 160, 26);
+    color: white;
+}
+
+.bg_img{
+    width: 100%;
+    margin: 0 auto 0;
+    padding-top: 40px;
+}
+
+.bg_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.talk{
+    height: auto;
+    width: 100%;
+}
+
+.talk h2{
+    text-align: center;
+    padding-top: 140px;
+    color:  #4D4D4D;
+    font-size: 30px;
+}
+
+.talk p{
+    text-align: center;
+    padding-top: 80px;
+    color: #4D4D4D;
+}
+
+.talk_flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 105px;
+}
+
+.talk_about{
+    width: 300px;
+    height: 325px;
+    text-align: center;
+}
+
+.talk_about img{
+    height: 180px;
+    width: 200px;
+}
+
+.talk_about h3{
+    padding-top: 20px;
+}
+
+.talk_about p{
+    padding-top: 20px;
+    font-size: 0.7rem;
+}
+
+footer{
+    text-align: center;
+    width: 1000px;
+    height: 50px;
+    margin: 20px auto 50px;
+    /* background-color: rgb(255, 160, 26); */
+    font-size: 12px;
+}
+
+footer a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #E96944;
+    color: white;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+footer a:hover{
+    /* transition: 0.5s; */
+    background-color: #e38267;
+}

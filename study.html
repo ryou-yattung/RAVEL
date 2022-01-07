@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content="ここに説明文を設定"/>
+    <title>勉強</title>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@twitteraccount"/>
+    <meta property="og:site_name" content="サイト名"/>
+    <meta property="og:title" content="サイトタイトル"/>
+    <meta property="og:description" content="サイト説明文"/>
+    <meta property="og:url" content="https://hoge.ecc.com/"/>
+    <meta property="og:image" content="https://hoge.ecc.com/ogp.png"/>
+    <meta property="og:type" content="website"/>
+    <link rel="stylesheet" href="css/ress.css"/>
+    <link rel="stylesheet" href="css/study.css"/>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"> <img src="img/logo.png" alt="logo"></a>
+        </div>
+
+        <div id="menu">
+            <a href="#" onclick="return false;">
+                <img src="img/menu.svg" alt="">
+            </a>
+           
+            <nav class="menu_nav">
+                <p><a href="">メッセージ</a></p>
+                <p><a href="">お気に入り</a></p>
+                <p><a href="security.html">おこだわり</a></p>
+
+                <div class="menu_nav_a">
+                    <p class="login_btn"><a href="#" onclick="return false;">ログイン</a></p>
+                    <p class="login_btn"><a href="#" onclick="return false;">登録</a></p>
+                </div>
+           </nav>
+        </div>
+    </header>
+
+    <main>
+         <!-- login -->
+    <div class="login">
+
+        <div class="cancel">
+            <a href="#" onclick="return false;">
+                <img src="img/cancel.png" alt="">
+            </a>
+        </div>
+
+        <div class="ID">
+            <h1>ログイン</h1>
+
+            <p>
+                <label for="ID">ID:</label>
+                <p><input type="text" name="ID"></p>
+            </p>
+            
+            <p>
+                <label for="password">パスワード:</label>
+                <p><input type="password" name="password"></p>
+            </p>
+            
+            <h2>パスワートを忘れた場合  <span><a href="">こちら</a></span></h2>
+    
+            <h3><a href="index.html">登録</a></h3>
+        </div>
+    </div>
+
+
+
+        <div class="main_width">
+            <div class="preference">
+                <h2>Ravelのこだわり</h2>
+    
+                <ul>
+                    <li><a href="security.html">安全</a></li>
+                    <li class="preference_line"><a href="study.html">勉強</a></li>
+                    <li><a href="time.html">時間</a></li>
+                </ul>
+            </div>
+            
+        <div class="bg_img">
+            <img src="img/外国人たち.png" alt="">
+        </div>
+
+        <div class="talk">
+            <h2>無料に外国人と会話したいですか</h2>
+
+            <p>
+                Ravelは普段に外国語話す機会のない日本人は外国人を案内する時、
+                <br>無料で気軽く外国語を練習することができる。ウィンウィンの関係と言える。
+            </p>
+
+            <div class="talk_flex">
+                <div class="talk_about">
+                    <!-- img -->
+                    <img src="img/アセット 1.png" alt="">
+
+                    <h3>色々な国外国人</h3>
+
+                    <p>
+                        英語・中国語・広東語・韓国語・フランス語
+                        ・スペイン語・ドイツ語・イタリア語・ロシア語
+                        など
+                    </p>
+                </div>
+
+                <div class="talk_about">
+                    <!-- img -->
+                    <img src="img/アセット 2.png" alt="">
+
+                    <h3>会話できる</h3>
+
+                    <p>
+                        外国人と旅行しながら、気軽くに外国人と
+                        会話することができる
+                    </p>
+                </div>
+
+                <div class="talk_about">
+                    <!-- img -->
+                    <img src="img/アセット 3.png" alt="">
+
+                    <h3>料金</h3>
+
+                    <p>
+                        入会金無料、月額/年会費は一切無料！
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="#" onclick="return false;">
+            <h3 class="footer">今すぐ登録しようか</h3>
+        </a>
+    </footer>
+
+    <script>
+      // menu
+let menu=document .querySelector("#menu");
+console.log(menu);
+
+let nav=document .querySelector(".menu_nav");
+console.log(nav);
+
+let b=1;
+menu.onclick=function(event){
+    if(b){
+        nav.style.display="block";
+
+        b=0;
+    }   
+
+    else{
+        nav.style.display="none";
+
+        b=1;
+    }
+}
+    </script>
+</body>
+</html>
